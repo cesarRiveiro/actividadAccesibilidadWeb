@@ -1,0 +1,27 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "cabecera"
+    "carrusel"
+    "descripcion"
+    "footer";
+
+  grid-template-rows: 150px auto auto 220px;
+  gap: 1em;
+}
+
+header {
+  grid-area: cabecera;
+}
+
+.carrusel {
+  grid-area: carrusel;
+}
+
+.descripcion {
+  grid-area: descripcion;
+}
+
+footer {
+  grid-area: footer;
+}

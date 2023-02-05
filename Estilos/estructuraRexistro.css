@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Mystery+Quest&family=Rampart+One&family=Roboto&display=swap");
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-areas:
+    "cabecera"
+    "rexistro"
+    "footer";
+  grid-template-rows: 150px auto 220px;
+  gap: 1em;
+}
+
+header {
+  grid-area: cabecera;
+}
+
+.rexistro {
+  /* background-color: #00d7d2; */
+  grid-area: rexistro;
+  width: fit-content;
+  margin: 1em auto;
+  /* padding: 2em; */
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  border: solid 2px #00d7d2;
+}
+
+.banner {
+  background: linear-gradient(#74d3ae, #b678d3);
+  padding: 1em;
+  border-radius: 20px 0px 0px 20px;
+  -webkit-border-radius: 20px 0px 0px 20px;
+  -moz-border-radius: 20px 0px 0px 20px;
+  -ms-border-radius: 20px 0px 0px 20px;
+  -o-border-radius: 20px 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 2em;
+  width: 60%;
+  text-align: center;
+}
+
+.banner h2 {
+  position: relative;
+}
+.banner h2::after {
+  content: "";
+  width: 80%;
+  height: 8px;
+  background-color: white;
+  position: absolute;
+  left: 10%;
+  bottom: -13px;
+  z-index: 999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.banner span {
+  color: #9740c0;
+}
+
+.formulario {
+  padding: 2em;
+  width: 40%;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-weight: bolder;
+  color: black;
+}
+
+form input {
+  padding: 0.5em;
+  background-color: rgb(224, 220, 220);
+  border: solid 2px #9740c0;
+}
+
+.formulario form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.formulario form button {
+  background-color: #9740c0;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bolder;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  grid-area: footer;
+}

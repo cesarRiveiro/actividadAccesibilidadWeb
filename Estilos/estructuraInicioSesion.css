@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Mystery+Quest&family=Rampart+One&family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-areas:
+    "cabecera"
+    "sesion"
+    "footer";
+
+  grid-template-rows: 150px auto 220px;
+  gap: 1em;
+}
+
+header {
+  grid-area: cabecera;
+}
+
+.sesion {
+  grid-area: sesion;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  background: linear-gradient(#74d3ae, #b678d3);
+  width: 500px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 4em;
+  border-radius: 20px;
+}
+
+.container h3 {
+  text-decoration: underline;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.container h3::after {
+  content: "";
+  width: 80%;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  left: 5%;
+  bottom: -10px;
+  z-index: 999;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: left;
+  background-color: rgb(224, 220, 220);
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.container form input {
+  padding: 0.5em;
+  background-color: rgb(224, 220, 220);
+  border: solid 2px #9740c0;
+}
+
+.container form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.container form button {
+  margin: 0 auto;
+  background-color: #9740c0;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bolder;
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  grid-area: footer;
+}
